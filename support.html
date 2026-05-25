@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SRT Monitor — Support</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0a0a0b; color: #fff;
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 28px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: rgba(235,235,245,0.85); }
+  strong { color: #fff; }
+  a { color: #0A84FF; }
+  .back { display: inline-block; margin-bottom: 24px; color: #0A84FF; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">‹ SRT Monitor</a>
+    <h1>Support</h1>
+
+    <p>SRT Monitor is a diagnostic monitor and player for SRT and HLS streams.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li><strong>SRT:</strong> choose a mode (Caller / Listener / Rendezvous), enter the host,
+          port, and any options (latency, stream ID, encryption passphrase), then Connect. You can
+          also paste a full <code>srt://…</code> URL or scan a QR code.</li>
+      <li><strong>HLS:</strong> switch the protocol to HLS, paste an <code>.m3u8</code> URL (or tap
+          <strong>Try a demo stream</strong>), then Play.</li>
+    </ul>
+
+    <h2>What you can monitor</h2>
+    <ul>
+      <li>Live link metrics (RTT, bitrate, packet loss, buffer) at 4&nbsp;Hz.</li>
+      <li>TR&nbsp;101&nbsp;290 transport-stream health (Priority 1 &amp; 2) and per-PID bitrates.</li>
+      <li>Stream format (codec, resolution, frame rate), with optional video + audio.</li>
+      <li>30 minutes of history with charts, threshold alerts, and JSON export.</li>
+    </ul>
+
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>It won't connect to my SRT source.</strong> Check the mode, host/port, and that
+          any firewall/NAT allows the UDP port. For listener mode, the caller must be able to reach
+          this device (see the in-app Documentation → Networking).</li>
+      <li><strong>Does it work over the internet?</strong> Yes, if the path/port is reachable.
+          Cellular networks often block inbound connections (CGNAT) — use Caller or Rendezvous.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:calum.d.lawrence2@gmail.com">calum.d.lawrence2@gmail.com</a></p>
+  </div>
+</body>
+</html>
